@@ -1,0 +1,10 @@
+services:
+  lab:
+    build: .
+    image: practice4-grpc:1.0
+    ports:
+      - "127.0.0.1:18004:8000"
+      - "127.0.0.1:18005:8001"
+    volumes:
+      - ./evidence:/workspace/evidence
+      - ./logs:/workspace/logs
